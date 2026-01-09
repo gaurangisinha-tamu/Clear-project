@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.app-container {
+  box-sizing: border-box;
+  background-color: rgb(31, 41, 55);
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 8%;
+}
+.app-name {
+  box-sizing: border-box;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 15px;
+  letter-spacing: 0.5;
+  color: white;
+}
+.column-container {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgb(31, 41, 55);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.active-incidents-column {
+  box-sizing: border-box;
+
+  width: 28%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.active-incidents-header {
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 10%;
+  border-bottom: 2px solid gray;
+}
+.ai-title {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+.active-calls {
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 3px;
+  color: rgb(156, 163, 175);
+}
+.incidents-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: auto;
+}
+.current-incident-column {
+  box-sizing: border-box;
+  width: 45%;
+  height: 100%;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #111827;
+  gap: 24px;
+}
+.current-header {
+  box-sizing: border-box;
+  height: 10%;
+  width: 100%;
+  padding: 8px;
+}
+.current-name-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.current-name {
+  font-size: 40px;
+  font-weight: bold;
+}
+.phone-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+}
+.middle-scroll > * {
+  flex-shrink: 0;
+}
+.middle-scroll {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  height: 100%;
+}
+.location-group {
+  box-sizing: border-box;
+  width: 100%;
+  height: 470px;
+  background-color: rgb(31, 41, 55);
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sub-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+}
+.location {
+  box-sizing: border-box;
+
+  font-size: 30px;
+}
+.map {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(94, 92, 92);
+  border-radius: 8px;
+}
+
+.incident-details {
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(31, 41, 55);
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.incident-sub-container {
+  margin-top: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+.incident-right {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(31, 41, 55);
+  gap: 24px;
+  font-weight: 400;
+}
+.incident-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 24px;
+}
+
+.voice-container {
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(31, 41, 55);
+  gap: 24px;
+  border-radius: 8px;
+  padding: 24px;
+}
+.transcript-box {
+  height: fit-content;
+  padding: 16px;
+  width: 100%;
+  background-color: rgb(17, 24, 39);
+  border-radius: 8px;
+  color: rgb(209, 213, 219);
+  font-size: 24px;
+  font-style: italic;
+}
+.dispatch-units-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(31, 41, 55);
+  padding: 24px;
+  color: white;
+  border-radius: 8px;
+  gap: 24px;
+}
+.dispatch-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 16px;
+}
+.dispatcher-notes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(31, 41, 55);
+  padding: 24px;
+  color: white;
+  border-radius: 8px;
+  gap: 24px;
+}
+textarea {
+  height: 70%;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid gray;
+  background-color: rgb(17, 24, 39);
+  font-size: 24px;
+  padding: 24px;
+}
+.right-column {
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 36px;
+}
+.sh {
+  font-weight: bold;
+  font-size: 30px;
+}
+.units-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.lg {
+  color: rgb(156, 163, 175);
+}
+.gr {
+  color: rgb(74, 222, 128);
+  font-weight: bold;
+}
+.legend-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  font-size: 24px;
+}
+.square {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+}
+.rd {
+  background-color: red;
+}
+.or {
+  background-color: #f57c00;
+}
+.mo {
+  background-color: #eab308;
+}
+.lb {
+  background-color: #5285beff;
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.avg-time {
+  font-weight: bold;
+  font-size: 48px;
+}
+.danger {
+  color: red;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.middle-scroll {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge legacy */
+}
+
+/* Chrome, Edge, Safari */
+.middle-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* When hovered, show scrollbar */
+.middle-scroll:hover::-webkit-scrollbar {
+  width: 16px;
+}
+
+.middle-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(202, 1, 1, 0.3);
+  border-radius: 8px;
+}

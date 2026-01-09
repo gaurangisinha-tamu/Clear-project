@@ -1,0 +1,130 @@
+.incident-critical:hover {
+  box-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.incident-high:hover {
+  box-shadow: 0 0 15px rgba(245, 124, 0, 0.6);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.incident-medium:hover {
+  box-shadow: 0 0 15px rgba(251, 192, 45, 0.6);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.incident-low:hover {
+  box-shadow: 0 0 15px rgba(64, 115, 150, 0.6);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.name-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-prop {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.chip-critical {
+  box-sizing: border-box;
+  width: 95px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  font-weight: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.chip-high {
+  box-sizing: border-box;
+  width: 60px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f57c00;
+  font-weight: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.chip-medium {
+  box-sizing: border-box;
+  width: 95px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eab308;
+  font-weight: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.chip-low {
+  box-sizing: border-box;
+  width: 95px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5285beff;
+  font-weight: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.chips-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flash-warning {
+  animation: shakePulse 0.4s infinite;
+  animation: flashBg 0.6s infinite alternate;
+}
+
+@keyframes shakePulse {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flashBg {
+  0% {
+    background-color: rgba(255, 0, 0, 0.05);
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+}
