@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Project Team: Gaurangi Sinha, Keenan Ray, Kai Yin, Lingfeng Shi, Maria Teleki
+Team CLEAR: Cognitive Learning for Emergency Assistance and Response
+Guidance: Prof. Frank Shipman
+CSCE 634: Intelligent User Interfaces
+
 ## Available Scripts
 
 In the project directory, you can run:
